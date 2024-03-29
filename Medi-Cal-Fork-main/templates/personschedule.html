@@ -6,8 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-  <link rel="stylesheet" href="{% static 'css/styles.scss' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.scss' %}">
 
   <title>Schedule</title>
 </head>
@@ -72,7 +72,7 @@
     </div> <!-- .cd-schedule__timeline -->
     
     <div class="cd-schedule__events">
-      <script src = 'script.js'></script>
+      <script href = 'script.js'></script>
       <ul id = 'days'>
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Monday</span></div>
@@ -133,8 +133,8 @@
     <div class="cd-schedule__cover-layer"></div>
   </div> <!-- .cd-schedule -->
 
-  <script src="static/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
-  <script src="static/js/main.js"></script>
+  <script href = "{% static 'js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
+  <script href = "{% static 'js/main.js' %}"></script>
 </body>
 </html>
 

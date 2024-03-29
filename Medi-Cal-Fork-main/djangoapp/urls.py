@@ -24,17 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.default.as_view(), name="default"),
     path('home/',views.home.as_view(), name = 'home'),
-    path('signup/', views.signup.as_view(), name='signup'),
-    path('signin/',views.signin.as_view(), name = 'signin'),
-    path('activate/',views.activate.as_view(), name = 'activate'),
+    path('signup/', views.signup, name='signup'),
+    path('signin/',views.signin, name = 'signin'),
+    path('activate/',views.activate, name = 'activate'),
     path('index/',views.index.as_view(), name = 'index'),
     path('masterschedule/',views.masterschedule.as_view(), name = 'masterschedule'),
     path('appointment/',views.appointment.as_view(), name = 'appointment'),
     path('personschedule/',views.personschedule.as_view(), name = 'personschedule'),
 ]
-
-from django.conf import settings
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns
